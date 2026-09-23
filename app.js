@@ -45,9 +45,9 @@ const portraits={
  '발터':'walter',
  '에일린':'aileen'
 };
-function portrait(p,detail=false){const key=portraits[p[0]];return key?'<img class="'+(detail?'detail-portrait':'card-portrait')+'" src="assets/'+key+'.png" alt="'+p[0]+'" loading="lazy" decoding="async" width="1632" height="1232">':'';}
+function portrait(p,detail=false){const key=portraits[p[0]];return key?'<img class="'+(detail?'detail-portrait':'card-portrait')+'" src="assets/'+key+'.webp" alt="'+p[0]+'" loading="lazy" decoding="async" width="1632" height="1232">':'';}
 const beastArt={'모르가르':'morgar','니플하임':'niflheim','샤이 훌루드':'shai-hulud','바르가노스':'varganos','아퀼라':'aquila','가르마':'garma','스카른':'skarn','두라한':'durahan','그라울':'graul','바르칸':'varkan','카르그':'karg'};
-function beastImage(b,detail=false){const key=beastArt[b[0]];return key?'<img class="'+(detail?'detail-portrait':'beast-image')+'" src="assets/'+key+'.png" alt="'+b[0]+'의 모습" loading="lazy" decoding="async" width="1632" height="1232">':'';}
+function beastImage(b,detail=false){const key=beastArt[b[0]];return key?'<img class="'+(detail?'detail-portrait':'beast-image')+'" src="assets/'+key+'.webp" alt="'+b[0]+'의 모습" loading="lazy" decoding="async" width="1632" height="1232">':'';}
 const $=s=>document.querySelector(s);
 function extraNation(n){return '<details class="lore"><summary>주요 지역 · 군사 기록</summary>'+(n.units?'<h3>대표 병종</h3><p>'+n.units+'</p><p>'+n.logistics+'</p><p class="detail-note">병력 수는 전투력과 같지 않습니다. 동원에는 시간·생산·재정·치안 부담이 따릅니다.</p>':'')+'<dl class="regions">'+n.regions.map(r=>'<div><dt>'+r[0]+'</dt><dd>'+r[1]+'</dd></div>').join('')+'</dl></details>';}
 let nationIndex=0;
