@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1119"><title>알데라 대륙경영록 · 대륙 기록관</title><meta name="description" content="왕좌에 올라, 대륙의 다음 역사를 결정하라. 알데라의 국가와 인물, 마수와 재해종을 만나는 대륙 기록관."><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230b1119'/%3E%3Cpath d='M6 10l6 5 4-9 4 9 6-5-3 14H9z' fill='%23c5a777'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css?v=compact-beast-cards"><script src="canon.js" defer></script><script src="app.js" defer></script></head>
+<body>
+<a class="skip" href="#main">본문으로 이동</a>
+<div class="backdrop" aria-hidden="true"></div>
+<header><button id="menu-open" class="menu-button" aria-haspopup="dialog" aria-label="전체 메뉴 열기">☰ <span>메뉴</span></button><a class="brand" href="#home">ALDERA <span>CHRONICLES</span></a><span class="header-note">대륙 기록관</span></header>
+<main id="main" tabindex="-1">
+<section id="home" class="view hero">
+<div class="hero-copy"><p class="eyebrow">A CHRONICLE WRITTEN BY YOUR CHOICES</p><div class="ornament" aria-hidden="true">◆</div><h1><span>알데라</span><strong>대륙경영록</strong></h1><p class="hero-line">왕좌에 올라,<br class="mobile"> 대륙의 다음 역사를 결정하라.</p><p class="hero-description">얼음과 강철의 북부에서 황금빛 대사막까지.<br>국가의 운명, 인물의 신념, 그리고 잠들지 않는 재앙.<br>당신의 선택이 새로운 역사가 됩니다.</p><nav class="hero-actions" aria-label="기록관 바로가기"><a class="gold-button" href="#nations">국가와 인물 <span>↗</span></a><a class="plain-button" href="#bestiary">마수와 재해종 <span>↗</span></a></nav><p class="play-note"><a href="https://share.crack.wrtn.ai/0fby66j" target="_blank" rel="noopener noreferrer">스토리 ↗</a></p></div>
+<footer class="hero-footer"><span>국가경영 · 전략 · 외교 · 판타지</span><span>ALDERA ARCHIVE <b>Ⅰ</b></span></footer>
+</section>
+<section id="nations" class="view archive" hidden><div class="section-heading"><div><p class="eyebrow">01 / REALMS & CHARACTERS</p><h2>국가와 인물</h2></div><p>서로 다른 깃발, 서로 다른 신념.</p></div><div class="nation-layout"><nav id="nation-list" class="nation-list" aria-label="국가 선택"></nav><article id="nation-detail" class="nation-detail" aria-live="polite"></article></div></section>
+<section id="bestiary" class="view archive" hidden><div class="section-heading"><div><p class="eyebrow">02 / THE BESTIARY</p><h2>마수와 재해종</h2></div><p>국경 너머, 질서 바깥의 존재들.</p></div><div class="bestiary-intro"><span class="large-index">Ⅱ</span><div><h3>마력은 생명을 바꾸고,<br>거대한 존재는 지형을 바꾼다.</h3><p>마수는 이질적인 마력에 오염·변이된 생물입니다. 검은 경질부와 연보랏빛이 특징이며, 변이가 깊어질수록 그 흔적도 짙어집니다. 재해종은 한 개체 또는 무리만으로 도시와 지역에 재난을 일으킬 수 있는 존재입니다.</p></div></div><div id="beast-filters" class="filters" aria-label="생물 분류"><button data-filter="all" aria-pressed="true">전체</button><button data-filter="마수" aria-pressed="false">마수</button><button data-filter="재해종" aria-pressed="false">재해종</button></div><div id="beast-list" class="beast-grid"></div></section>
+</main>
+<dialog id="menu-dialog" class="menu-dialog" aria-labelledby="menu-title"><button class="close" data-close aria-label="메뉴 닫기">✕</button><p class="eyebrow">THE CONTINENT ARCHIVE</p><h2 id="menu-title">알데라의 기록</h2><nav><a href="#home"><span>00</span>메인</a><a href="#nations"><span>01</span>국가와 인물</a><a href="#bestiary"><span>02</span>마수와 재해종</a></nav><p class="menu-foot">한 번의 선택이<br>대륙의 역사가 된다.</p></dialog>
+<dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><button class="close" data-close aria-label="상세 정보 닫기">✕</button><div id="detail-body"></div></dialog>
+<noscript><p>국가와 도감을 탐색하려면 브라우저에서 JavaScript를 켜 주세요.</p></noscript>
+</body></html>
